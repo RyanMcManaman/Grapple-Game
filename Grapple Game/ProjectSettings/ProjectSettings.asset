@@ -718,7 +718,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 8aee40ff-12ac-4432-9ad9-433a7a09941c
-  projectName: 
+  projectName: Grapple Game
   organizationId: ryanmcmanaman
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
