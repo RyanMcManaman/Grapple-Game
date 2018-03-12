@@ -8,15 +8,25 @@ public class GrappleGun : MonoBehaviour {
     public LineRenderer cable;
     public Hand hand;
     public Rigidbody player;
+    public GameObject aimingReticle;
+
+    private GameObject reticle;
+    private Transform reticleTransform;
     private Ray ray;
     private RaycastHit hit;
     private Vector3 grapplePoint;
+
+    private void Start()
+    {
+        reticle = Instantiate(aimingReticle);
+    }
 
     void Update () {
         if (TriggerPressDown(hand))
         {
             if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
             {
+                reticle.SetActive(false);
                 cable.enabled = true;
                 cable.SetPosition(0, hand.transform.position);
                 cable.SetPosition(1, hit.point);
@@ -38,7 +48,12 @@ public class GrappleGun : MonoBehaviour {
         {
             if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
             {
-                //TODO: Implement aiming reticle (milestone 2 feature)
+                reticle.SetActive(true);
+                reticle.transform.position = hit.point;
+            }
+            else
+            {
+                reticle.SetActive(false);
             }
         }
     }

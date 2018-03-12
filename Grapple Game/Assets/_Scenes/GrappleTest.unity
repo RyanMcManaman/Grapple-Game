@@ -228,13 +228,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152533104}
-  m_LocalRotation: {x: -0.21395989, y: -0, z: -0, w: 0.97684246}
+  m_LocalRotation: {x: -0.20820431, y: -0.22504917, z: 0.049293004, w: 0.95056516}
   m_LocalPosition: {x: -10.66, y: 14.41, z: 25.93}
   m_LocalScale: {x: 3.93, y: 12.82, z: 1}
   m_Children: []
   m_Father: {fileID: 91517373}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -24.709002, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -21.94, y: -28.907001, z: 11.657001}
 --- !u!1 &362446482
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +787,8 @@ MonoBehaviour:
   cable: {fileID: 1614742294}
   hand: {fileID: 1614742295}
   player: {fileID: 2122420723}
+  aimingReticle: {fileID: 1310276572103674, guid: d7b688743c3d0904c8310436ddca0a0b,
+    type: 2}
 --- !u!120 &1614742291
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -889,6 +891,8 @@ MonoBehaviour:
   cable: {fileID: 1614742291}
   hand: {fileID: 1614742293}
   player: {fileID: 2122420723}
+  aimingReticle: {fileID: 1310276572103674, guid: d7b688743c3d0904c8310436ddca0a0b,
+    type: 2}
 --- !u!114 &1614742293 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -946,7 +950,7 @@ LineRenderer:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-      m_RotationOrder: 4
+      m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.5, g: 0.5, b: 0.5, a: 1}
