@@ -6,17 +6,24 @@ using UnityEngine;
 
 public class GrappleGun : MonoBehaviour {
     public LineRenderer cable;
+    public LineRenderer laser;
     public Hand hand;
     public Rigidbody player;
     private Ray ray;
     private RaycastHit hit;
     private Vector3 grapplePoint;
 
+    private void Start()
+    {
+        laser.enabled = true;
+    }
+
     void Update () {
         if (TriggerPressDown(hand))
         {
             if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
             {
+                laser.enabled = false;
                 cable.enabled = true;
                 cable.SetPosition(0, hand.transform.position);
                 cable.SetPosition(1, hit.point);
@@ -33,6 +40,22 @@ public class GrappleGun : MonoBehaviour {
         else if (TriggerRelease(hand))
         {
             cable.enabled = false;
+            laser.enabled = true;
+        }
+        else
+        {
+            if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
+            {
+                laser.enabled = true;
+                laser.SetPosition(0, hand.transform.position);
+                laser.SetPosition(1, hit.point);
+            }
+            else
+            {
+                laser.enabled = true;
+                laser.SetPosition(0, hand.transform.position);
+                laser.SetPosition(1, hand.transform.forward);
+            }
         }
     }
 
