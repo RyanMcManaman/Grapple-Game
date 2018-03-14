@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Valve.VR.InteractionSystem;
+﻿using Valve.VR.InteractionSystem;
 using UnityEngine;
 
 public class GrappleGun : MonoBehaviour {
@@ -21,7 +18,7 @@ public class GrappleGun : MonoBehaviour {
         reticle = Instantiate(aimingReticle);
     }
 
-    void Update () {
+    void FixedUpdate () {
         if (TriggerPressDown(hand))
         {
             if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
@@ -32,13 +29,13 @@ public class GrappleGun : MonoBehaviour {
                 cable.SetPosition(1, hit.point);
 
                 grapplePoint = hit.point;
-                player.AddForce((grapplePoint - hand.transform.position).normalized * 25f);
+                player.AddForce((grapplePoint - hand.transform.position).normalized * Vector3.Distance(grapplePoint, hand.transform.position));
             }
         }
         else if (TriggerPressed(hand) && cable.enabled)
         {
             cable.SetPosition(0, hand.transform.position);
-            player.AddForce((grapplePoint - hand.transform.position).normalized * 25f);
+            player.AddForce((grapplePoint - hand.transform.position).normalized * Vector3.Distance(grapplePoint, hand.transform.position));
         }
         else if (TriggerRelease(hand))
         {
