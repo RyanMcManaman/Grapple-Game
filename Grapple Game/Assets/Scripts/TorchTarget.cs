@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//this is an effect independent script that you can use to activate an object
-//when all torches are lit up.
+/// <summary>
+/// this is an effect independent script that you can use  to tag an object
+/// as "activated" an object when all torches are lit up.
+/// </summary>
 public class TorchTarget : MonoBehaviour {
   public GameObject[] Torches;
 	// Update is called once per frame
