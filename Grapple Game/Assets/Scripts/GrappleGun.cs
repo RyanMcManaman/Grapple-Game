@@ -19,7 +19,7 @@ public class GrappleGun : MonoBehaviour {
     }
 
     void FixedUpdate () {
-        if (pickup) //Disable grapple on pickup
+        if (pickup) //Disable grapple on pickup  
         {
             reticle.SetActive(false);
         }
@@ -81,7 +81,6 @@ public class GrappleGun : MonoBehaviour {
             pickup = true;
         }
     }
-
 
     private void OnTriggerExit(Collider other) //block comes off pressure plate
     {
