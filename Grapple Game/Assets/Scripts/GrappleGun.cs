@@ -29,13 +29,13 @@ public class GrappleGun : MonoBehaviour {
                 cable.SetPosition(1, hit.point);
 
                 grapplePoint = hit.point;
-                player.AddForce((grapplePoint - hand.transform.position).normalized * Vector3.Distance(grapplePoint, hand.transform.position));
+                player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f);
             }
         }
         else if (TriggerPressed(hand) && cable.enabled)
         {
             cable.SetPosition(0, hand.transform.position);
-            player.AddForce((grapplePoint - hand.transform.position).normalized * Vector3.Distance(grapplePoint, hand.transform.position));
+            player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f);
         }
         else if (TriggerRelease(hand))
         {
