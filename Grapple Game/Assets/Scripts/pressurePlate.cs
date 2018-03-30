@@ -72,6 +72,4 @@ public class pressurePlate : MonoBehaviour {
 			pressed = false;
 		}
 	}
-
-
 }
