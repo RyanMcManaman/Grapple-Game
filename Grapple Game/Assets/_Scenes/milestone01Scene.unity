@@ -113,6 +113,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25256763 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1400592796808574, guid: f93de2e43a0e8ae4f9db6b88327850af,
+    type: 2}
+  m_PrefabInternal: {fileID: 824878151}
+--- !u!135 &25256768
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25256763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &109665939 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100056, guid: 9bb79c1d2da9b453e8b8374b5a7dc0cd, type: 3}
@@ -210,6 +227,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010000001, y: 0.009999999, z: 0.01}
   m_Center: {x: 0, y: 0, z: 5.820766e-11}
+--- !u!1 &209346554 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1569214194399288, guid: f93de2e43a0e8ae4f9db6b88327850af,
+    type: 2}
+  m_PrefabInternal: {fileID: 824878151}
+--- !u!135 &209346559
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209346554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &221663544 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100032, guid: 9bb79c1d2da9b453e8b8374b5a7dc0cd, type: 3}

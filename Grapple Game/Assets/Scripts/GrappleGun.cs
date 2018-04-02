@@ -16,12 +16,14 @@ public class GrappleGun : MonoBehaviour {
     private void Start()
     {
         reticle = Instantiate(aimingReticle);
+        pickup = false;
     }
 
     void FixedUpdate () {
         if (pickup) //Disable grapple on pickup  
         {
             reticle.SetActive(false);
+            cable.enabled = false;
         }
         else if (TriggerPressDown(hand)) //Initial Grapple, setting of linerender properties
         {
@@ -59,6 +61,7 @@ public class GrappleGun : MonoBehaviour {
         }
     }
 
+    //HELPER FUNCTIONS
     private bool TriggerPressDown(Hand hand)
     {
         return hand.controller.GetPressDown(SteamVR_Controller.ButtonMask.Trigger);
@@ -74,7 +77,7 @@ public class GrappleGun : MonoBehaviour {
         return hand.controller.GetPressUp(SteamVR_Controller.ButtonMask.Trigger);
     }
 
-    private void OnTriggerEnter(Collider other)   //block is on pressure plate
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("pressurePlateBox"))
         {
@@ -82,7 +85,15 @@ public class GrappleGun : MonoBehaviour {
         }
     }
 
-    private void OnTriggerExit(Collider other) //block comes off pressure plate
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("pressurePlateBox"))
+        {
+            pickup = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("pressurePlateBox"))
         {
