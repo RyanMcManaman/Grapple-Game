@@ -58,7 +58,15 @@ public class pressurePlate : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)   //block is on pressure plate
 	{
-		if (other.gameObject.CompareTag ("pressurePlateBox")) 
+		if (other.gameObject.CompareTag ("pressurePlateBox")|| other.gameObject.CompareTag ("Player")) 
+		{
+			pressed = true;
+		}
+	}
+
+	void OnTriggerStay(Collider other)   //block is on pressure plate
+	{
+		if (other.gameObject.CompareTag ("pressurePlateBox")|| other.gameObject.CompareTag ("Player")) 
 		{
 			pressed = true;
 		}
@@ -67,7 +75,7 @@ public class pressurePlate : MonoBehaviour {
 
 	void OnTriggerExit(Collider other) //block comes off pressure plate
 	{
-		if (other.gameObject.CompareTag ("pressurePlateBox")) 
+		if (other.gameObject.CompareTag ("pressurePlateBox") || other.gameObject.CompareTag ("Player")) 
 		{
 			pressed = false;
 		}
