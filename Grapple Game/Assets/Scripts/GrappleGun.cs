@@ -6,6 +6,7 @@ public class GrappleGun : MonoBehaviour {
     public Hand hand;
     public Rigidbody player;
     public GameObject aimingReticle;
+    public float grappleRange;
 
     private GameObject reticle;
     private RaycastHit hit;
@@ -27,7 +28,7 @@ public class GrappleGun : MonoBehaviour {
         }
         else if (TriggerPressDown(hand)) //Initial Grapple, setting of linerender properties
         {
-            if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit))
+            if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit, grappleRange))
             {
                 reticle.SetActive(false);
                 cable.enabled = true;
@@ -49,7 +50,7 @@ public class GrappleGun : MonoBehaviour {
         }
         else //Display Reticle
         {
-            if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit) && !pickup)
+            if (Physics.Raycast(hand.transform.position, hand.transform.forward, out hit, grappleRange) && !pickup)
             {
                 reticle.SetActive(true);
                 reticle.transform.position = hit.point;
