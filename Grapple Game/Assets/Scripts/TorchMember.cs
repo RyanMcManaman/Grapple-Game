@@ -13,6 +13,9 @@ public class TorchMember : MonoBehaviour {
       if (!this.gameObject.tag.Contains("lit"))
       {
         this.gameObject.tag = this.gameObject.tag + " lit";
+		Renderer rend = GetComponent<Renderer>();
+        rend.material.shader = Shader.Find("Specular");
+        rend.material.SetColor("_SpecColor", Color.red);
       }
     }
   }

@@ -12,15 +12,21 @@ public class TorchTarget : MonoBehaviour {
     int i = 0;
 		foreach(GameObject obj in Torches)
     {
-      if (obj.tag.Contains("alight"))
+      if (obj.tag.Contains("lit"))
       {
         i++;
       }
     }
     if (i >= Torches.Length)
     {
-      if (!this.gameObject.tag.Contains("activated"))
-        this.gameObject.tag = this.gameObject.tag + " activated";
+		//This declares our target, aka: point b
+		var target = new Vector3(transform.position.x, transform.position.y+(float).1, transform.position.x);
+		//This is our speed. It is SUPER sensitive, so its best to use a float
+		var speed = (float)0.5;
+		//Start the update function
+		//Here's where the magic happens. Lerp is actually giving coordinates for the new position every update.
+		transform.position = Vector3.Lerp(transform.position, target, speed);
+     
     }
 	}
 }

@@ -11,6 +11,8 @@ TagManager:
   - Fly
   - ResetPlayer
   - ResetPlayerBox
+  - lit
+  - torch
   layers:
   - Default
   - TransparentFX
