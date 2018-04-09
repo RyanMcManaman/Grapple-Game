@@ -9,6 +9,8 @@ TagManager:
   - pressurePlate
   - pressurePlateBox
   - Fly
+  - ResetPlayer
+  - ResetPlayerBox
   layers:
   - Default
   - TransparentFX
