@@ -9,14 +9,11 @@ public class TorchMember : MonoBehaviour {
   void OnCollisionEnter(Collision collision)
   {
     if (collision.collider.gameObject.tag.Contains("torch"))
-    {
-      if (!this.gameObject.tag.Contains("lit"))
-      {
-        this.gameObject.tag = this.gameObject.tag + " lit";
+	{
+		this.gameObject.tag = "lit";
 		Renderer rend = GetComponent<Renderer>();
-        rend.material.shader = Shader.Find("Specular");
-        rend.material.SetColor("_SpecColor", Color.red);
-      }
-    }
+		rend.material.shader = Shader.Find("Specular");
+		rend.material.SetColor("_SpecColor", Color.red);
+     }
   }
 }
