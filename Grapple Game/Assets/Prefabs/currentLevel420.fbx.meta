@@ -1,0 +1,448 @@
+fileFormatVersion: 2
+guid: d024fb5ba411a4576abf35cb57fcaaf9
+timeCreated: 1524449154
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ceiling1
+    100002: ceiling2
+    100004: celing3
+    100006: celings
+    100008: crossover12
+    100010: crossover23
+    100012: crossover34
+    100014: //RootNode
+    100016: endPlatform
+    100018: floor1
+    100020: floor2
+    100022: floor3
+    100024: floor4
+    100026: floors
+    100028: pasted__boulder_large
+    100030: pasted__boulder_large1
+    100032: pasted__boulder_large2
+    100034: pasted__boulder_medium
+    100036: pasted__boulder_medium1
+    100038: pasted__boulder_medium2
+    100040: pasted__boulder_small
+    100042: pasted__boulder_small1
+    100044: pasted__boulders
+    100046: pasted__exitPath
+    100048: pasted__exitPath 1
+    100050: pasted__mountain
+    100052: pasted__pCube1
+    100054: pasted__pCube1 1
+    100056: pasted__pCube1 2
+    100058: pasted__pCube2
+    100060: pasted__pCube5
+    100062: pasted__pCube5 1
+    100064: pasted__pCube6
+    100066: pasted__pCube6 1
+    100068: pasted__pCube7
+    100070: pasted__pCube7 1
+    100072: pCube1
+    100074: pCube5
+    100076: pCube6
+    100078: pCube7
+    100080: platform1
+    100082: platform2
+    100084: platform3
+    100086: section1
+    100088: section1Walls
+    100090: section2
+    100092: section2Walls
+    100094: section3
+    100096: section3Walls
+    100098: section4
+    100100: sharedWalls12
+    100102: startingPlatform
+    100104: tree
+    100106: tree1
+    100108: tree2
+    100110: tree3
+    100112: trees
+    100114: wall1
+    100116: wall10
+    100118: wall11
+    100120: wall12
+    100122: wall13
+    100124: wall14
+    100126: wall15
+    100128: wall16
+    100130: wall17
+    100132: wall18
+    100134: wall19
+    100136: wall2
+    100138: wall20
+    100140: wall21
+    100142: wall22
+    100144: wall23
+    100146: wall3
+    100148: wall4
+    100150: wall5
+    100152: wall6
+    100154: wall7
+    100156: wall8
+    100158: wall9
+    400000: ceiling1
+    400002: ceiling2
+    400004: celing3
+    400006: celings
+    400008: crossover12
+    400010: crossover23
+    400012: crossover34
+    400014: //RootNode
+    400016: endPlatform
+    400018: floor1
+    400020: floor2
+    400022: floor3
+    400024: floor4
+    400026: floors
+    400028: pasted__boulder_large
+    400030: pasted__boulder_large1
+    400032: pasted__boulder_large2
+    400034: pasted__boulder_medium
+    400036: pasted__boulder_medium1
+    400038: pasted__boulder_medium2
+    400040: pasted__boulder_small
+    400042: pasted__boulder_small1
+    400044: pasted__boulders
+    400046: pasted__exitPath
+    400048: pasted__exitPath 1
+    400050: pasted__mountain
+    400052: pasted__pCube1
+    400054: pasted__pCube1 1
+    400056: pasted__pCube1 2
+    400058: pasted__pCube2
+    400060: pasted__pCube5
+    400062: pasted__pCube5 1
+    400064: pasted__pCube6
+    400066: pasted__pCube6 1
+    400068: pasted__pCube7
+    400070: pasted__pCube7 1
+    400072: pCube1
+    400074: pCube5
+    400076: pCube6
+    400078: pCube7
+    400080: platform1
+    400082: platform2
+    400084: platform3
+    400086: section1
+    400088: section1Walls
+    400090: section2
+    400092: section2Walls
+    400094: section3
+    400096: section3Walls
+    400098: section4
+    400100: sharedWalls12
+    400102: startingPlatform
+    400104: tree
+    400106: tree1
+    400108: tree2
+    400110: tree3
+    400112: trees
+    400114: wall1
+    400116: wall10
+    400118: wall11
+    400120: wall12
+    400122: wall13
+    400124: wall14
+    400126: wall15
+    400128: wall16
+    400130: wall17
+    400132: wall18
+    400134: wall19
+    400136: wall2
+    400138: wall20
+    400140: wall21
+    400142: wall22
+    400144: wall23
+    400146: wall3
+    400148: wall4
+    400150: wall5
+    400152: wall6
+    400154: wall7
+    400156: wall8
+    400158: wall9
+    2100000: g3
+    2100002: g2
+    2100004: b1
+    2100006: b5
+    2100008: b3
+    2100010: b4
+    2100012: b2
+    2100014: lava
+    2100016: pasted__lava
+    2100018: gr1
+    2100020: gr3
+    2100022: lambert1
+    2100024: Leaves
+    2100026: Bark
+    2300000: ceiling1
+    2300002: ceiling2
+    2300004: celing3
+    2300006: endPlatform
+    2300008: floor1
+    2300010: floor2
+    2300012: floor3
+    2300014: floor4
+    2300016: pasted__boulder_large
+    2300018: pasted__boulder_large1
+    2300020: pasted__boulder_large2
+    2300022: pasted__boulder_medium
+    2300024: pasted__boulder_medium1
+    2300026: pasted__boulder_medium2
+    2300028: pasted__boulder_small
+    2300030: pasted__boulder_small1
+    2300032: pasted__mountain
+    2300034: pasted__pCube1
+    2300036: pasted__pCube1 1
+    2300038: pasted__pCube1 2
+    2300040: pasted__pCube2
+    2300042: pasted__pCube5
+    2300044: pasted__pCube5 1
+    2300046: pasted__pCube6
+    2300048: pasted__pCube6 1
+    2300050: pasted__pCube7
+    2300052: pasted__pCube7 1
+    2300054: pCube1
+    2300056: pCube5
+    2300058: pCube6
+    2300060: pCube7
+    2300062: platform1
+    2300064: platform2
+    2300066: platform3
+    2300068: startingPlatform
+    2300070: tree
+    2300072: tree1
+    2300074: tree2
+    2300076: tree3
+    2300078: wall1
+    2300080: wall10
+    2300082: wall11
+    2300084: wall12
+    2300086: wall13
+    2300088: wall14
+    2300090: wall15
+    2300092: wall16
+    2300094: wall17
+    2300096: wall18
+    2300098: wall19
+    2300100: wall2
+    2300102: wall20
+    2300104: wall21
+    2300106: wall22
+    2300108: wall23
+    2300110: wall3
+    2300112: wall4
+    2300114: wall5
+    2300116: wall6
+    2300118: wall7
+    2300120: wall8
+    2300122: wall9
+    3300000: ceiling1
+    3300002: ceiling2
+    3300004: celing3
+    3300006: endPlatform
+    3300008: floor1
+    3300010: floor2
+    3300012: floor3
+    3300014: floor4
+    3300016: pasted__boulder_large
+    3300018: pasted__boulder_large1
+    3300020: pasted__boulder_large2
+    3300022: pasted__boulder_medium
+    3300024: pasted__boulder_medium1
+    3300026: pasted__boulder_medium2
+    3300028: pasted__boulder_small
+    3300030: pasted__boulder_small1
+    3300032: pasted__mountain
+    3300034: pasted__pCube1
+    3300036: pasted__pCube1 1
+    3300038: pasted__pCube1 2
+    3300040: pasted__pCube2
+    3300042: pasted__pCube5
+    3300044: pasted__pCube5 1
+    3300046: pasted__pCube6
+    3300048: pasted__pCube6 1
+    3300050: pasted__pCube7
+    3300052: pasted__pCube7 1
+    3300054: pCube1
+    3300056: pCube5
+    3300058: pCube6
+    3300060: pCube7
+    3300062: platform1
+    3300064: platform2
+    3300066: platform3
+    3300068: startingPlatform
+    3300070: tree
+    3300072: tree1
+    3300074: tree2
+    3300076: tree3
+    3300078: wall1
+    3300080: wall10
+    3300082: wall11
+    3300084: wall12
+    3300086: wall13
+    3300088: wall14
+    3300090: wall15
+    3300092: wall16
+    3300094: wall17
+    3300096: wall18
+    3300098: wall19
+    3300100: wall2
+    3300102: wall20
+    3300104: wall21
+    3300106: wall22
+    3300108: wall23
+    3300110: wall3
+    3300112: wall4
+    3300114: wall5
+    3300116: wall6
+    3300118: wall7
+    3300120: wall8
+    3300122: wall9
+    4300000: endPlatform
+    4300002: platform2
+    4300004: platform1
+    4300006: startingPlatform
+    4300008: platform3
+    4300010: wall2
+    4300012: wall1
+    4300014: wall3
+    4300016: wall4
+    4300018: wall5
+    4300020: wall6
+    4300022: pCube1
+    4300024: pCube5
+    4300026: pCube6
+    4300028: pCube7
+    4300030: wall7
+    4300032: wall8
+    4300034: wall9
+    4300036: pasted__mountain
+    4300038: pasted__boulder_medium
+    4300040: pasted__boulder_small
+    4300042: pasted__boulder_large
+    4300044: pasted__boulder_large1
+    4300046: pasted__boulder_small1
+    4300048: pasted__boulder_medium1
+    4300050: pasted__boulder_large2
+    4300052: pasted__boulder_medium2
+    4300054: wall14
+    4300056: wall13
+    4300058: wall12
+    4300060: wall11
+    4300062: wall10
+    4300064: wall23
+    4300066: pasted__pCube1
+    4300068: pasted__pCube5
+    4300070: pasted__pCube6
+    4300072: pasted__pCube7
+    4300074: floor2
+    4300076: floor1
+    4300078: floor3
+    4300080: ceiling1
+    4300082: ceiling2
+    4300084: celing3
+    4300086: pasted__pCube1
+    4300088: pasted__pCube2
+    4300090: wall15
+    4300092: wall16
+    4300094: wall17
+    4300096: wall18
+    4300098: wall19
+    4300100: wall20
+    4300102: wall21
+    4300104: wall22
+    4300106: pasted__pCube1
+    4300108: pasted__pCube5
+    4300110: pasted__pCube6
+    4300112: pasted__pCube7
+    4300114: floor4
+    4300116: tree
+    4300118: tree1
+    4300120: tree2
+    4300122: tree3
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

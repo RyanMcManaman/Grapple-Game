@@ -80,7 +80,7 @@ public class GrappleGun : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("pressurePlateBox"))
+		if (other.gameObject.CompareTag("pressurePlateBox") || other.gameObject.CompareTag("torch"))
         {
             pickup = true;
         }
@@ -88,7 +88,7 @@ public class GrappleGun : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("pressurePlateBox"))
+		if (other.gameObject.CompareTag("pressurePlateBox")|| other.gameObject.CompareTag("torch"))
         {
             pickup = true;
         }
@@ -96,7 +96,7 @@ public class GrappleGun : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("pressurePlateBox"))
+		if (other.gameObject.CompareTag("pressurePlateBox")|| other.gameObject.CompareTag("torch"))
         {
             pickup = false;
         }

@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 7b5abb35267bf41d6a82094f6fbc0e0c
+timeCreated: 1524519492
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: door
+    100002: //RootNode
+    100004: doorFrame
+    100006: pasted__pCube1
+    100008: pasted__pCube2
+    100010: pasted__pCube3
+    100012: pasted__pCube5
+    100014: pasted__pCube6
+    100016: pasted__pCube7
+    100018: pasted__pCylinder1
+    100020: pasted__pCylinder2
+    100022: pasted__pCylinder3
+    100024: pasted__pCylinder4
+    100026: pasted__pCylinder5
+    100028: pasted__pCylinder6
+    100030: pasted__pCylinder7
+    400000: door
+    400002: //RootNode
+    400004: doorFrame
+    400006: pasted__pCube1
+    400008: pasted__pCube2
+    400010: pasted__pCube3
+    400012: pasted__pCube5
+    400014: pasted__pCube6
+    400016: pasted__pCube7
+    400018: pasted__pCylinder1
+    400020: pasted__pCylinder2
+    400022: pasted__pCylinder3
+    400024: pasted__pCylinder4
+    400026: pasted__pCylinder5
+    400028: pasted__pCylinder6
+    400030: pasted__pCylinder7
+    2100000: lambert1
+    2100002: lambert2
+    2300000: pasted__pCube1
+    2300002: pasted__pCube2
+    2300004: pasted__pCube3
+    2300006: pasted__pCube5
+    2300008: pasted__pCube6
+    2300010: pasted__pCube7
+    2300012: pasted__pCylinder1
+    2300014: pasted__pCylinder2
+    2300016: pasted__pCylinder3
+    2300018: pasted__pCylinder4
+    2300020: pasted__pCylinder5
+    2300022: pasted__pCylinder6
+    2300024: pasted__pCylinder7
+    3300000: pasted__pCube1
+    3300002: pasted__pCube2
+    3300004: pasted__pCube3
+    3300006: pasted__pCube5
+    3300008: pasted__pCube6
+    3300010: pasted__pCube7
+    3300012: pasted__pCylinder1
+    3300014: pasted__pCylinder2
+    3300016: pasted__pCylinder3
+    3300018: pasted__pCylinder4
+    3300020: pasted__pCylinder5
+    3300022: pasted__pCylinder6
+    3300024: pasted__pCylinder7
+    4300000: pasted__pCylinder7
+    4300002: pasted__pCylinder6
+    4300004: pasted__pCylinder5
+    4300006: pasted__pCylinder4
+    4300008: pasted__pCylinder3
+    4300010: pasted__pCube3
+    4300012: pasted__pCube2
+    4300014: pasted__pCylinder2
+    4300016: pasted__pCylinder1
+    4300018: pasted__pCube1
+    4300020: pasted__pCube5
+    4300022: pasted__pCube6
+    4300024: pasted__pCube7
+    7400000: DoorAnimationDown
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DoorAnimationDown
+      takeName: Take 001
+      firstFrame: 49
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
