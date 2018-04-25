@@ -13,7 +13,7 @@ public class resetPlayer : MonoBehaviour
 	Transform player;
 
 
-	public GameObject box; 
+
 
 
 	void Start ()
@@ -28,6 +28,12 @@ public class resetPlayer : MonoBehaviour
 		
 	void OnTriggerEnter(Collider other)
 	{
+		if (other.gameObject.CompareTag ("ResetPlayerBox")) {
+			player = GameObject.FindGameObjectWithTag ("Player").transform;
+			playerX = player.position.x;
+			playerY = player.position.y;
+			playerZ = player.position.z;
+		}
 		if (other.gameObject.CompareTag ("ResetPlayer")) 
 		{
 			print ("helloifnelkfn");

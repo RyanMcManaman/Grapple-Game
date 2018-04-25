@@ -13,6 +13,7 @@ TagManager:
   - ResetPlayerBox
   - lit
   - torch
+  - resetTorch
   layers:
   - Default
   - TransparentFX
