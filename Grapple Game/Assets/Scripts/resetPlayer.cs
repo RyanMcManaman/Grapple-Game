@@ -12,13 +12,10 @@ public class resetPlayer : MonoBehaviour
 
 	Transform player;
 
-
-
-
-
+	Rigidbody rb;
 	void Start ()
 	{
-
+		rb = GetComponent<Rigidbody>();
 	
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		playerX = player.position.x;
@@ -28,7 +25,8 @@ public class resetPlayer : MonoBehaviour
 		
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.CompareTag ("ResetPlayerBox")) {
+		if (other.gameObject.CompareTag ("ResetPlayerBox")) 
+		{
 			player = GameObject.FindGameObjectWithTag ("Player").transform;
 			playerX = player.position.x;
 			playerY = player.position.y;
@@ -38,6 +36,8 @@ public class resetPlayer : MonoBehaviour
 		{
 			print ("helloifnelkfn");
 			transform.position = new Vector3 (playerX, playerY, playerZ);
+			rb.velocity = Vector3.zero;
+			rb.angularVelocity = Vector3.zero;
 		}
 
 	}
