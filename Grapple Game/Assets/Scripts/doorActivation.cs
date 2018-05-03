@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class doorActivation : MonoBehaviour {
+public class doorActivation : MonoBehaviour 
+{
 
 	// Use this for initialization
 
 	Animator anime;
+
+
 
 	public GameObject PressurePlate;      //needs to be the 'small' cube of pressure plate
 	private pressurePlate scriptAccess;

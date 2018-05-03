@@ -7,6 +7,7 @@ public class GrappleGun : MonoBehaviour {
     public Rigidbody player;
     public GameObject aimingReticle;
     public float grappleRange;
+	public float forceMultiplier;
 
     private GameObject reticle;
     private RaycastHit hit;
@@ -36,13 +37,13 @@ public class GrappleGun : MonoBehaviour {
                 cable.SetPosition(1, hit.point);
 
                 grapplePoint = hit.point;
-                player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f);
+				player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f * forceMultiplier);
             }
         }
         else if (TriggerPressed(hand) && cable.enabled) //Continue Grapple, update of linerender properties
         {
             cable.SetPosition(0, hand.transform.position);
-            player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f);
+			player.AddForce((grapplePoint - hand.transform.position).normalized * 25.0f * forceMultiplier);
         }
         else if (TriggerRelease(hand)) //Stop Grapple
         {
@@ -80,6 +81,9 @@ public class GrappleGun : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+		if (other.gameObject.CompareTag ("maxRange")) {
+			grappleRange = 1000f;
+		}
 		if (other.gameObject.CompareTag("pressurePlateBox") || other.gameObject.CompareTag("torch"))
         {
             pickup = true;

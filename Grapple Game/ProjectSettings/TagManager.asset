@@ -14,6 +14,12 @@ TagManager:
   - lit
   - torch
   - resetTorch
+  - ring
+  - end
+  - win
+  - lose
+  - section2Music
+  - section3Music
   layers:
   - Default
   - TransparentFX
